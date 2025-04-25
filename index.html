@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyuntae Jeon's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, footer {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        main {
+            padding: 2rem;
+        }
+        section {
+            margin-bottom: 3rem;
+        }
+        footer {
+            text-align: center;
+        }
+        form input, form textarea {
+            width: 100%;
+            max-width: 400px;
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        form input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Hyuntae Jeon's Portfolio</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm <strong>Hyuntae Jeon</strong>, a senior CAE engineer at <strong>Renault Korea Central Research Center</strong>, working in the <strong>DE-TD CAE Team</strong>.</p>
+        <p>I have over <strong>17 years</strong> of experience specializing in structural strength and durability analysis using <strong>ABAQUS</strong> and <strong>DesignLife</strong>.</p>
+        <p>My main expertise includes:</p>
+        <ul>
+            <li>Global durability analysis of complete vehicle BIW (Body-In-White) structure</li>
+            <li>Fatigue damage prediction and evaluation</li>
+            <li>Strength analysis for Towing, Jack-up, Panel Stiffness, and Canning tests</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Global Durability CAE</strong>: Simulating and evaluating full vehicle fatigue performance based on load cases.</li>
+            <li><strong>Towing & Jack-up Analysis</strong>: Ensuring structural safety during towing and maintenance operations.</li>
+            <li><strong>Panel Stiffness and Canning</strong>: Analyzing panel behavior under local stiffness and vibration conditions.</li>
+            <li><strong>Fatigue Damage Evaluation</strong>: Predicting fatigue life using CAE methods to support vehicle durability design.</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="mailto:your.email@example.com" method="POST" enctype="text/plain">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+            <input type="submit" value="Send">
+        </form>
+    </section>
+</main>
+
+<footer>
+    &copy; 2025 Hyuntae Jeon. All rights reserved.
+</footer>
+
+</body>
+</html>
