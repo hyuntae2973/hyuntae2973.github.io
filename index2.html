@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전현태 포트폴리오</title>
+    <style>
+        body {
+            font-family: 'Noto Sans KR', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, footer {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        main {
+            padding: 2rem;
+        }
+        section {
+            margin-bottom: 3rem;
+        }
+        footer {
+            text-align: center;
+        }
+        form input, form textarea {
+            width: 100%;
+            max-width: 400px;
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        form input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>전현태 포트폴리오</h1>
+    <nav>
+        <a href="#about">소개</a>
+        <a href="#projects">프로젝트</a>
+        <a href="#contact">연락하기</a>
+    </nav>
+</header>
+
+<main>
+    <section id="about">
+        <h2>소개</h2>
+        <p>안녕하세요, <strong>전현태</strong>입니다. 현재 <strong>르노코리아 중앙연구소 DE-TD CAE팀</strong>에서 근무하고 있으며, 약 <strong>17년</strong>간 차량 구조 해석 분야에서 전문성을 쌓아왔습니다.</p>
+        <p><strong>ABAQUS</strong>와 <strong>DesignLife</strong>를 활용하여 차량의 구조 강도(Strength) 및 내구성(Durability) 해석 업무를 담당하고 있습니다.</p>
+        <p>주요 수행 업무는 다음과 같습니다:</p>
+        <ul>
+            <li>차량 전체 차체(BIW: Body-In-White)의 Global 내구성 해석 및 피로 손상(Fatigue Damage) 평가</li>
+            <li>Towing(견인) 및 Jack-up(잭업) 해석을 통한 구조 안전성 검토</li>
+            <li>패널 강성(Panel Stiffness) 및 캔닝(Canning) 해석 수행</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>프로젝트</h2>
+        <ul>
+            <li><strong>Global Durability 해석</strong> : 차량 전체 차체에 대한 피로 손상 예측 및 내구성 확보를 위한 CAE 해석 수행</li>
+            <li><strong>Towing & Jack-up 해석</strong> : 차량 견인 및 정비 시 구조 강도 검증을 위한 해석</li>
+            <li><strong>패널 강성 및 캔닝 해석</strong> : 패널 부품의 국부 강성 및 변형 거동 분석</li>
+            <li><strong>피로 수명 평가</strong> : DesignLife를 이용한 피로 수명 예측 및 설계 개선 지원</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>연락하기</h2>
+        <form action="mailto:your.email@example.com" method="POST" enctype="text/plain">
+            <label for="name">이름:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">이메일:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">메시지:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+            <input type="submit" value="보내기">
+        </form>
+    </section>
+</main>
+
+<footer>
+    &copy; 2025 전현태. 모든 권리 보유.
+</footer>
+
+</body>
+</html>
